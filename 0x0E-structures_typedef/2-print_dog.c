@@ -3,9 +3,10 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a struct dog
- * @d: struct dog to print
+ * print_dog - Prints a struct dog.
+ * @d: The struct dog to be printed.
  */
+
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
@@ -15,6 +16,7 @@ void print_dog(struct dog *d)
 		printf("Name: (nil)\n");
 	else
 		printf("Name: %s\n", d->name);
+
 	if (d->age < 0)
 		printf("Age: (nil)\n");
 	else
